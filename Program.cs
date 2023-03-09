@@ -32,6 +32,18 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            Player cocky = new SmackTalkingPlayer();
+            cocky.Name = "Big Talk";
+            cocky.phrase = new List<string>
+            {
+                "Have fun watching me in the next round",
+                "You'll be sorry you tried."
+            };
+
+            player1.Play(large);
+
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large
             };
